@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Melbourne, a City of Culture
+title: Melbourne, Australia's cultural capital
 email: afonsomartinscunha@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Melbourne, not only a music city but a really cultural city.
