@@ -35,7 +35,7 @@ Looking into the other establishments in the city has to offer, its clear that M
 The job market can tell a lot about a city. Year 2022 the two biggest industries in Melbourne are Financial and Insurance services and Professional, Scientific and Technical services. Melbourne is home for top technical companies such as Seek and Rea group. ANZ bank, one of the country’s four biggest banks, is also located here in Melbourne. It is also worth noting that there is an industry for mining in the city, one of the largest mining companies in the world, BHP Billiton mining, is in Melbourne.(https://www.invest.vic.gov.au/why-melbourne/top_companies_call_Melbourne_home) 
 </p>
 
-<iframe src="/assets/bokeh_viz.html"
+<iframe src="assets/bokeh_viz.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="500"
@@ -49,7 +49,7 @@ Regarding the cultural scene in Melbourne, titled the biggest city for live musi
 </p>
 <!-- Insert viz Arts and rec jobs over the years-->
 
-<iframe src="/assets/inter_bokeh_viz.html"
+<iframe src="assets/inter_bokeh_viz.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="500"
