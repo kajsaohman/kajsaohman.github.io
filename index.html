@@ -50,11 +50,19 @@
         content="Welocme to Melbourne ## The best city in Australia Welcome to Melbourne, located southeast in Australia. With its 5,8 million inhabitants it’s the country’s second biggest city. Today we will give you an introduction to the city and its characteristics, maybe its you next holiday destination? The city of music...">
 
     <meta name="twitter:image" content="http://localhost:4000/assets/icon.png">
+    <style>
+        .centered-caption {
+            text-align: center;
+            margin: 0 auto;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand"
             href="http://localhost:4000/">Melbourne, A Cultural
             City</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
@@ -87,17 +95,14 @@
         <div class="row">
             <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
                 <h1> Melbourne, A Cultural City</h1>
-                <iframe src="/src/Melbourne_Venues.html" sandbox="allow-same-origin allow-scripts" width="100%"
+                <iframe id="figure1" src="/src/Melbourne_Venues.html" sandbox="allow-same-origin allow-scripts" width="100%"
                     height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 1. Melbourne's Musical Life - Shows all the
-                        different registered live music venues and
-                        their respective type
+                <p class="centered-caption"><em>
+                        Figure 1. Melbourne's Musical Life - Live music venues and types
                     </em></p>
 
-                <h2 id="the-best-city-in-australia">The best city in
-                    Australia</h2>
+                <h2 id="the-best-city-in-australia">Australia's Cultural Hub</h2>
 
                 <p>
                     Welcome to Melbourne, nestled in Australia's southeast. With a population of 5.8 million, it's the
@@ -130,7 +135,8 @@
                     alike.
                 </p>
                 <p>
-                    Melbourne has a vibrant and diverse music scene that
+                    Melbourne has a vibrant and diverse music scene, also reflected in the the diverse amount
+                    of venues <a href="#figure1">Figure 1</a>, that
                     includes genres going from rock and pop to jazz
                     and classical.
                     Venues like the iconic Forum Theatre and AAMI Park host
@@ -144,10 +150,10 @@
                     city's cultural fabric.
                 </p>
 
-                <iframe src="/src/live_music_venues_cluster_map.html" sandbox="allow-same-origin allow-scripts"
+                <iframe id="figure2" src="/src/live_music_venues_cluster_map.html" sandbox="allow-same-origin allow-scripts"
                     width="100%" height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
+                <p class="centered-caption"><em>
                         Figure 2. Melbourne's Cluster of Live Music Venues
                     </em></p>
 
@@ -168,13 +174,13 @@
                     providing a very interesting look into recent years and
                     the impact of Covid. Most importantly, this
                     study also
-                    highlighted live music's impact in Victoria.
+                    highlighted live music's impact in Victoria, Melbourne's state.
                 </p>
                 <p>
                     This would not be possible if Melbourne didn't have the
                     ideal cultural and economical environment to
                     achivieve it.
-                    Melbourne has become supportive community of musicians,
+                    Melbourne has developed a supportive community of musicians,
                     promoters, and industry professionals who
                     work together to foster
                     emerging talent. The city provides resources like
@@ -182,10 +188,11 @@
                     programs to nurture
                     upcoming artists.
                 </p>
-                <p><img src="/src/live_music_venues_type.png" alt="image broken (" /></p>
-                <p><em>
-                        Figure 1. Types of Venues in Melbourne
-                    </em></p>
+                <p><img id="figure3" src="/src/live_music_venues_type.png" alt="image broken (" /></p>
+                <p class="centered-caption"><em>
+                        Figure 3. Types of Venues in Melbourne
+                    </em>
+                </p>
                 <p>
                     From bars to universities, Melbourne has the proper
                     infra-structure to support a lively and growing
@@ -214,18 +221,18 @@
                     museums.
                 </p>
                 <!-- Insert map och landmarks-->
-                <iframe src="/src/Melbourne_Landmarks.html" sandbox="allow-same-origin allow-scripts" width="100%"
+                <iframe id="figure4" src="/src/Melbourne_Landmarks.html" sandbox="allow-same-origin allow-scripts" width="100%"
                     height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 2. Melbourne's Landmarks
+                <p class="centered-caption"><em>
+                        Figure 4. Melbourne's Landmarks
                     </em></p>
 
-                <iframe src="/src/bubble_themes.html" sandbox="allow-same-origin allow-scripts" width="100%"
+                <iframe id="figure5" src="/src/bubble_themes.html" sandbox="allow-same-origin allow-scripts" width="100%"
                     height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 2. Landmark's Theme Significance
+                <p class="centered-caption"><em>
+                        Figure 5. Landmark's Theme Significance
                     </em></p>
 
                 <h2> What does the people in Melbourne do for a living?</h2>
@@ -243,11 +250,11 @@
                     various fields.
                 </p>
                 <!-- Insert bokeh viz of all jobs-->
-                <iframe src="assets/bokeh_viz.html" sandbox="allow-same-origin allow-scripts" width="100%" height="500"
+                <iframe id="figure6" src="assets/bokeh_viz.html" sandbox="allow-same-origin allow-scripts" width="100%" height="500"
                     scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 3. The job market distribution by industry
+                <p class="centered-caption"><em>
+                        Figure 6. The job market distribution by industry
                     </em></p>
                 <p>
                     When it comes to Melbourne's cultural landscape, it proudly wears the crown as the premier
@@ -259,11 +266,11 @@
                     was a significant regrowth in job opportunities within this vibrant sector.
                 </p>
                 <!-- Insert viz Arts and rec jobs over the years-->
-                <iframe src="assets/inter_bokeh_viz.html" sandbox="allow-same-origin allow-scripts" width="100%"
+                <iframe id="figure7" src="assets/inter_bokeh_viz.html" sandbox="allow-same-origin allow-scripts" width="100%"
                     height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 4. Jobs within industry for Arts and Recreation Services over the past 20 years.
+                <p class="centered-caption"><em>
+                        Figure 7. Jobs within industry for Arts and Recreation Services over the past 20 years.
                     </em></p>
 
                 <p>This uprising can be
@@ -273,7 +280,7 @@
                     the Yarra River, close to the city center. Known for its bustling arts scene, Southbank is home to
                     an many theaters,
                     galleries, and entertainment venues, offering a variety of cultural experiences for locals and
-                    visitors alike. It can also be seen figure 2 Landmarks that Soutbank has a several teather
+                    visitors alike. It can also be seen <a href="#figure4">Figure 4 Landmarks</a> that Soutbank has a several teather
                     establishments. This supports the description of the area as a cultural center, and it is
                     interesting to know that Soutbank has one of <a
                     href="https://news.melbourne.vic.gov.au/why-we-love-southbank/"
@@ -282,19 +289,53 @@
                 </a> 
                 </p>
 
-                <h2> Does Melbourne's accessibility contribute?</h2>
-                <iframe src="/src/Melbourne_On_Street_Parking.html" sandbox="allow-same-origin allow-scripts"
+                <h2> Melbourne's Accessibility</h2>
+                <p>
+                    Lastly, we wanted to understand how the city's parking is planned and shaped around Melbourne's cultural hubs. Being a
+                    car-oriented city and the most populous city in Australia, Melbourne faces significant challenges related to its growing
+                    population and traffic congestion. A recent <a href="https://www.abc.net.au/news/2024-04-15/vehicle-car-ownership-registrations-traffic-congestion-melbourne/103685800"
+                        title="Melbourne's Car Problem" target="_blank">study</a> by ABC highlights the city's car problem.
+
+                </p>
+                <p>
+                    Our analysis aims to explore the impact of parking infrastructure on Melbourne's cultural areas without delving into the
+                    broader traffic congestion issue or proposing solutions to it.
+                    Instead, we wanted to analyse what is the current accessibility around our live music venues and landmarks.
+                    Parking, often considered merely a logistical concern, plays a significant role in shaping the cultural dynamics of
+                    cities, including Melbourne. Both off-street and on-street parking influence how people interact with urban spaces and
+                    the cultural fabric of the city.
+                </p>
+                <iframe id="figure8" src="/src/Melbourne_On_Street_Parking.html" sandbox="allow-same-origin allow-scripts"
                     width="100%" height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 2. On-Street Parking Heatmap
+                <p class="centered-caption"><em>
+                        Figure 8. On-Street Parking Heatmap
                     </em></p>
-                <iframe src="/src/Melbourne_Off_Street_Parking.html" sandbox="allow-same-origin allow-scripts"
+                <p>
+                    As we can see in <a href="#figure8">Figure 8</a>, Melbourne's has a high concentration of on-street parking available revolved around main cultural areas.
+                    These parking hubs also reflect some of the city's cultural hub both landmark and music venues wise, such as Melbourne Central and South Bank.
+                    On-street parking provides convenient access to businesses, venues, and public spaces, encouraging foot traffic and
+                    fostering a vibrant street life. This ease of access helps support local shops, restaurants, and cultural venues by
+                    making them more accessible to residents and visitors.
+
+                </p>
+                <iframe id="figure9" src="/src/Melbourne_Off_Street_Parking.html" sandbox="allow-same-origin allow-scripts"
                     width="100%" height="500" scrolling="no" seamless="seamless" frameborder="0">
                 </iframe>
-                <p><em>
-                        Figure 2. Off-Street Parking Heatmap
-                    </em></p>
+                <p class="centered-caption"><em>
+                        Figure 9. Off-Street Parking Heatmap
+                </em></p>
+                <p>
+                    Nevertheless, in a city, specially a car-oriented city, off-street parking often complements the availability of on-street parking.
+                    However, off-street parking has greater impact than what most people would figure. Off-street parking facilities, such as parking garages and lots,
+                    not only support economic activity by providing centralized parking solutions for larger venues, shopping centers, and entertainment districts but also
+                    is essential for major cultural events, concerts, and festivals. Large-capacity parking facilities ensure smooth traffic
+                    flow, enhancing the visitor experience and allowing events to attract larger crowds. This way, off-street parking enables visitors
+                    to spend extended time in cultural districts without worrying about parking availability. Melbourne offers a great deal of off-street parking
+                    that also support the main cultural hubs and give a more stress free access to landmarks and venues as seen in <a href="#figure9">Figure 9</a>,
+                    creating a excellent pedestrian environment and showing a shift towards sustainable urban planning and walkable cities.
+                
+                </p>
 
             </div>
         </div>
